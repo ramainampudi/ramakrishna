@@ -1,0 +1,74 @@
+.nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  height: 15vh;
+
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+
+  &__logo {
+    display: block;
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    gap: 5rem;
+    justify-content: end;
+    align-items: center;
+    line-height: 1;
+  }
+
+  &__link {
+    position: relative;
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-secondary;
+      display: block;
+      font-family: $font-display;
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 1rem 0;
+      line-height: 1;
+      transition: all ease-in-out 0.2s;
+    }
+
+    &:hover,
+    &:focus {
+      transform: translateY(-3px) scale(1.05);
+    }
+
+    &:active {
+      transform: translateY(-1px) scale(1.02);
+      color: $color-primary-light;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 3px;
+      left: 50%;
+      bottom: 0px;
+      background-color: white;
+      transition: all ease-in-out 0.2s;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+      left: 0;
+    }
+    &:active::after {
+      background-color: $color-primary-light;
+    }
+  }
+}

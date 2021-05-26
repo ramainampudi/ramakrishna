@@ -1,0 +1,23 @@
+//GLOBAL STYLES
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-display;
+}
+
+::selection {
+  background-color: $color-secondary;
+  color: $color-primary;
+}

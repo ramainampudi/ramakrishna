@@ -1,0 +1,37 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="logo">
+<circle id="Ellipse 1" cx="40" cy="40" r="40" fill="#FCFCFC"/>
+<g id="IRK Logo blue 1" clip-path="url(#clip0)">
+<g id="layer1">
+<path id="path856" d="M40.2251 72.0638C57.8982 72.0638 72.2251 57.7369 72.2251 40.0638C72.2251 22.3907 57.8982 8.06378 40.2251 8.06378C22.552 8.06378 8.2251 22.3907 8.2251 40.0638C8.2251 57.7369 22.552 72.0638 40.2251 72.0638Z" fill="url(#paint0_radial)"/>
+<path id="circle927" d="M40.2251 68.7502C56.0681 68.7502 68.9114 55.9068 68.9114 40.0638C68.9114 24.2207 56.0681 11.3774 40.2251 11.3774C24.382 11.3774 11.5387 24.2207 11.5387 40.0638C11.5387 55.9068 24.382 68.7502 40.2251 68.7502Z" fill="url(#paint1_radial)"/>
+<g id="g867">
+<path id="rect835" d="M32.2811 29.1342H24.4754V58.377H32.2811V29.1342Z" fill="#426FFC"/>
+<path id="rect837" d="M33.411 29.1342V36.6524H55.371V29.1342H33.411Z" fill="#396AFC"/>
+<g id="rect839" filter="url(#filter0_f)">
+<path d="M33.555 38.0892L42.1275 38.0943L55.3659 58.377L46.8002 58.3665L33.555 38.0892Z" fill="#2948FF"/>
+</g>
+<path id="rect842" d="M32.2811 21.8416H24.4754V28.0567H32.2811V21.8416Z" fill="#396AFC"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="33.4062" y="37.9404" width="22.1085" height="20.5854" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="0.074391" result="effect1_foregroundBlur"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.2251 40.0638) scale(32.2318)">
+<stop stop-color="#2948FF" stop-opacity="0"/>
+<stop offset="1" stop-color="#2948FF" stop-opacity="0.203922"/>
+</radialGradient>
+<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40.2251 40.0638) scale(28.8942)">
+<stop stop-color="#2948FF" stop-opacity="0"/>
+<stop offset="1" stop-color="#2948FF" stop-opacity="0.203922"/>
+</radialGradient>
+<clipPath id="clip0">
+<rect width="64" height="64" fill="white" transform="translate(8 8)"/>
+</clipPath>
+</defs>
+</svg>
