@@ -2,10 +2,10 @@
   width: 80%;
   margin: 0 auto;
   padding: 1.5rem;
-  height: 15vh;
+  min-height: 15vh;
 
   display: grid;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
