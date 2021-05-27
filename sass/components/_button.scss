@@ -1,0 +1,24 @@
+.btn {
+  display: inline-block;
+  margin: 9rem 0 0;
+  padding: 1.5rem 4rem;
+  color: $color-primary;
+  background-color: white;
+  text-align: center;
+  border-radius: 100px;
+  box-shadow: 0 1rem 1rem rgba(darkblue, 0.2);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-2px);
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 1rem rgba(darkblue, 0.1);
+  }
+}

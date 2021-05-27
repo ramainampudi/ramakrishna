@@ -1,0 +1,46 @@
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scaleY(0);
+  }
+
+  5% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+
+  20% {
+    opacity: 0;
+    transform: translateY(-50%) scaleY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scaleY(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes moveCross {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(20px, -20px);
+  }
+}

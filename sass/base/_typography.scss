@@ -1,0 +1,18 @@
+.heading-h1 {
+  font-size: 6.4rem;
+  font-family: $font-heading;
+  text-transform: uppercase;
+  color: $color-secondary;
+  line-height: 1.2;
+  margin: 1.5rem 0 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.heading-h3 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  color: $color-primary-light;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
