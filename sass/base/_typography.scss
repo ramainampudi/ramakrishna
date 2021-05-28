@@ -9,10 +9,36 @@
   letter-spacing: 1px;
 }
 
+.heading-h2 {
+  font-size: 4.8rem;
+  font-family: $font-heading;
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  border-radius: 2px 5rem 5rem 2px;
+  box-shadow: 0.5rem 1rem 2rem rgba(darkblue, 0.2);
+  letter-spacing: 1px;
+  font-weight: regular;
+
+  &--light {
+    color: $color-primary;
+    background-color: $color-secondary-dark;
+  }
+  &--dark {
+    color: $color-secondary;
+    background-image: $color-bg-gradient;
+  }
+}
+
 .heading-h3 {
   font-size: 3.6rem;
   text-transform: uppercase;
   color: $color-primary-light;
   font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.heading-h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
   letter-spacing: 1px;
 }

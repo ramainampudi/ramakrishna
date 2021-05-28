@@ -6,7 +6,11 @@ $color-primary-light: #cbdaf7;
 $color-secondary: #fcfcfc;
 $color-secondary-dark: #f3f6ff;
 
-$color-bg-gradient: linear-gradient($color-primary, $color-primary-dark);
+$color-bg-gradient: linear-gradient(
+  to bottom,
+  $color-primary,
+  $color-primary-dark
+);
 
 //FONT TYPES
 $font-heading: "Lora", serif;

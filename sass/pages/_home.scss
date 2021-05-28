@@ -1,0 +1,18 @@
+#projects {
+  background-color: $color-secondary-dark;
+}
+
+.projects {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+
+  &__cards {
+    display: grid;
+    margin: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 5rem;
+  }
+}
