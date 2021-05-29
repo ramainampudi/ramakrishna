@@ -12,6 +12,9 @@
   font-weight: 600;
   font-size: 1.6rem;
   transition: all 0.2s ease;
+  @media only screen and (min-width: 91.25em) {
+    margin: 10rem 0 0;
+  }
 
   &:hover,
   &:focus {
