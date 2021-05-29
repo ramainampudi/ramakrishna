@@ -46,6 +46,9 @@
     gap: 8rem;
     & > * {
       width: 100%;
+      &:nth-child(odd) {
+        width: 50%;
+      }
     }
   }
 }

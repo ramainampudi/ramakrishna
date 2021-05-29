@@ -16,8 +16,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      function get_year() {
+        var d = new Date();
+        var y = d.getFullYear();
+        document.getElementById("date").innerHTML = y;
+      }
+    </script>
   </head>
-  <body>
+  <body onload="get_year()">
     <header class="header" id="header">
       <nav class="nav">
         <div class="nav__logo-box">
@@ -684,8 +691,8 @@
     </section>
     <section class="contact" id="contact">Contact</section>
     <footer class="footer" id="footer">
-      &copy;2021 All rights reserved.<br />Made with &hearts; by Rama Krishna
-      Inampudi
+      &copy;<span id="date"></span> All rights reserved.<br />Made with
+      <span class="hearts">&hearts;</span> by Rama Krishna Inampudi
     </footer>
   </body>
 </html>

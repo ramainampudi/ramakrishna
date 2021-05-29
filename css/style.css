@@ -60,7 +60,7 @@ body {
   letter-spacing: 1px; }
 
 .heading-h2 {
-  font-size: 4.8rem;
+  font-size: 3.6rem;
   font-family: "Lora", serif;
   display: inline-block;
   padding: 1.5rem 5rem;
@@ -82,7 +82,7 @@ body {
   letter-spacing: 1px; }
 
 .heading-h4 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 500;
   letter-spacing: 1px; }
 
@@ -262,6 +262,9 @@ body {
   text-align: center;
   font-size: 1.4rem;
   padding: 4rem; }
+  .footer .hearts {
+    color: orangered;
+    font-size: 1.6rem; }
 
 .section-projects {
   background-color: #f3f6ff; }
@@ -301,6 +304,8 @@ body {
     gap: 8rem; }
     .companies__logos > * {
       width: 100%; }
+      .companies__logos > *:nth-child(odd) {
+        width: 50%; }
 
 .section-passion {
   background-color: #f3f6ff; }
