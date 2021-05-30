@@ -478,7 +478,8 @@ button {
     @media only screen and (max-width: 56.25em) {
       .projects__cards {
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        justify-content: center; } }
+        justify-content: center;
+        margin: 4rem; } }
 
 .section-companies {
   background-image: linear-gradient(to bottom, #396afc, #2948ff); }
