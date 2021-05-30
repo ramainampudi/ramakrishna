@@ -10,8 +10,96 @@
   align-items: center;
   gap: 5rem;
 
+  @media only screen and (max-width: 65em) {
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 49.5em) {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
   &__logo {
     display: block;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    background-color: $color-secondary;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(black, 0.15);
+    cursor: pointer;
+    display: none;
+
+    @media only screen and (max-width: 56.25em) {
+      top: 4rem;
+      right: 4rem;
+      display: block;
+    }
+
+    @media only screen and (max-width: 49.5em) {
+      top: 3rem;
+      right: 3rem;
+      display: block;
+    }
+
+    &:hover,
+    &:active {
+      span {
+        margin: 1rem 0 0.5rem;
+        transition: transform 0.2s ease;
+      }
+    }
+
+    span {
+      padding: 1px 2rem;
+      background-color: $color-primary;
+      margin: 1rem 0 0.2rem;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+    .span-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.8rem;
+    }
+  }
+
+  &__background {
+    display: none;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    // position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient($color-primary, $color-primary-dark);
+    z-index: 1000;
+    // transform: scale(70);
+    transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+
+    @media only screen and (max-width: 56.25em) {
+      display: block;
+      position: fixed;
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @media only screen and (max-width: 49.5em) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__list {
@@ -22,6 +110,25 @@
     justify-content: end;
     align-items: center;
     line-height: 1;
+
+    @media only screen and (max-width: 65em) {
+      width: 95%;
+    }
+
+    @media only screen and (max-width: 56.25em) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: -50%;
+      z-index: 1500;
+      width: 0;
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
   }
 
   &__link {
@@ -39,6 +146,7 @@
       padding: 1rem 0;
       line-height: 1;
       transition: all ease-in-out 0.2s;
+      text-align: left;
     }
 
     &:hover,
@@ -69,6 +177,40 @@
     }
     &:active::after {
       background-color: $color-primary-light;
+    }
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(70);
+  }
+
+  &__checkbox:checked ~ &__list {
+    height: 100vh;
+    width: 100%;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+  }
+
+  &__checkbox:checked ~ &__button {
+    &,
+    &:active,
+    &:hover {
+      span:nth-child(1) {
+        transform: rotateZ(135deg) translate(1rem, -1rem) scale(1.2);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        transform: rotateZ(-135deg) translate(2rem, 2rem) scale(1.2);
+      }
+    }
+    span {
+      margin: 1rem 0;
     }
   }
 }

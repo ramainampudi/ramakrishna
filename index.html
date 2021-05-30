@@ -30,9 +30,14 @@
         <div class="nav__logo-box">
           <img class="nav__logo" src="./img/logo.svg" alt="logo" />
         </div>
+        <input type="checkbox" class="nav__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="nav__button"
+          ><div class="span-group"><span></span><span></span><span></span></div
+        ></label>
+        <div class="nav__background">&nbsp;</div>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#header">Home</a>
+            <a class="nav__link" href="">Home</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#projects">Projects</a>
@@ -689,7 +694,99 @@
         </div>
       </div>
     </section>
-    <section class="contact" id="contact">Contact</section>
+    <section class="section-contact" id="contact">
+      <div class="contact">
+        <div class="contact__text">
+          <h2 class="heading-h2">Say Hello.</h2>
+          <p>
+            To discuss anything from innovative future technology to philosophy,
+            space to smart homes, markets to movies, cricket to chess. As you
+            can guess, I have interests in a variety of fields. Contact me and
+            we might strike a chord on a common thought.
+          </p>
+          <div class="contact__icons">
+            <a
+              href="https://linkedin.com/in/ramakrishna-inampudi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__link"
+            >
+              <svg class="contact__icon">
+                <use xlink:href="./img/sprite.svg#icon-linkedin2"></use>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/ramainampudi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__link"
+            >
+              <svg class="contact__icon">
+                <use xlink:href="./img/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/rama.krishna.12382"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__link"
+            >
+              <svg class="contact__icon">
+                <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/iramki"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact__link"
+            >
+              <svg class="contact__icon">
+                <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </div>
+          <a href="https://ramainampudi.github.io/resume/" class="btn"
+            >View resume</a
+          >
+        </div>
+        <form
+          action="https://formspree.io/f/mleabnog"
+          method="post"
+          class="form contact__form"
+        >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            aria-placeholder="Name"
+            required
+            aria-required="true"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            aria-placeholder="Email"
+            required
+            aria-required="true"
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="8"
+            placeholder="Message"
+            aria-placeholder="Message"
+            required
+            aria-required="true"
+          ></textarea>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
     <footer class="footer" id="footer">
       &copy;<span id="date"></span> All rights reserved.<br />Made with
       <span class="hearts">&hearts;</span> by Rama Krishna Inampudi

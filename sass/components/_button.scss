@@ -9,12 +9,17 @@
   box-shadow: 0 1rem 1rem rgba(darkblue, 0.2);
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   font-weight: 600;
   font-size: 1.6rem;
   transition: all 0.2s ease;
-  @media only screen and (min-width: 91.25em) {
+  @media only screen and (min-width: 91.25em),
+    only screen and (max-width: 56.25em) {
     margin: 10rem 0 0;
   }
+  // @media only screen and (max-width: 56.25em) {
+  //   margin: 10rem 0 0;
+  // }
 
   &:hover,
   &:focus {
@@ -24,4 +29,8 @@
     transform: translateY(-1px);
     box-shadow: 0 1rem 1rem rgba(darkblue, 0.1);
   }
+}
+
+button {
+  border: none;
 }
