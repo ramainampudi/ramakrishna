@@ -392,7 +392,8 @@ button {
   .intro__images {
     padding: 5rem;
     position: relative;
-    flex: 1 0 50%; }
+    flex: 1 0 50%;
+    text-align: center; }
     .intro__images > * {
       width: 100%; }
   .intro__image-blob {
@@ -417,7 +418,8 @@ button {
     z-index: 2; }
     @media only screen and (max-width: 56.25em) {
       .intro__image-mobile {
-        right: 0; } }
+        right: 0;
+        width: 40%; } }
   .intro__image-developer {
     width: 40%;
     position: absolute;
@@ -434,7 +436,8 @@ button {
     z-index: 1; }
     @media only screen and (max-width: 56.25em) {
       .intro__image-learn {
-        top: 7%; } }
+        top: 7%;
+        width: 90%; } }
 
 #left-flower {
   animation: moveUp 2s ease-in-out infinite alternate-reverse; }
