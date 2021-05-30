@@ -127,8 +127,9 @@
       left: 50%;
       top: 10%;
       @media only screen and (max-width: 56.25em) {
-        left: 50%;
+        left: 45%;
         width: 35%;
+        top: 15%;
       }
     }
     &-learn {
@@ -138,7 +139,8 @@
       z-index: 1;
       @media only screen and (max-width: 56.25em) {
         top: 7%;
-        width: 90%;
+        width: 60%;
+        left: 0%;
       }
     }
   }

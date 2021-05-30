@@ -427,8 +427,9 @@ button {
     top: 10%; }
     @media only screen and (max-width: 56.25em) {
       .intro__image-developer {
-        left: 50%;
-        width: 35%; } }
+        left: 45%;
+        width: 35%;
+        top: 15%; } }
   .intro__image-learn {
     position: absolute;
     left: -20%;
@@ -437,7 +438,8 @@ button {
     @media only screen and (max-width: 56.25em) {
       .intro__image-learn {
         top: 7%;
-        width: 90%; } }
+        width: 60%;
+        left: 0%; } }
 
 #left-flower {
   animation: moveUp 2s ease-in-out infinite alternate-reverse; }
