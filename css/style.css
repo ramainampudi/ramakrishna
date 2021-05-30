@@ -477,7 +477,7 @@ button {
     gap: 5rem; }
     @media only screen and (max-width: 56.25em) {
       .projects__cards {
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         justify-content: center; } }
 
 .section-companies {
