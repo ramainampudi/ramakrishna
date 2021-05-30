@@ -475,6 +475,10 @@ button {
     align-items: center;
     justify-items: center;
     gap: 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .projects__cards {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        justify-content: center; } }
 
 .section-companies {
   background-image: linear-gradient(to bottom, #396afc, #2948ff); }
