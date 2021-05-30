@@ -466,6 +466,10 @@ button {
   @media only screen and (max-width: 65em) {
     .projects {
       width: 95%; } }
+  @media only screen and (max-width: 56.25em) {
+    .projects {
+      padding: 5rem 0;
+      width: 100%; } }
   .projects h2 {
     border-radius: 2px 5rem 5rem 2px; }
   .projects__cards {
@@ -492,14 +496,21 @@ button {
   @media only screen and (max-width: 65em) {
     .companies {
       width: 95%; } }
+  @media only screen and (max-width: 56.25em) {
+    .companies {
+      padding: 5rem 0;
+      width: 100%; } }
   .companies h2 {
     position: absolute;
     border-radius: 5rem 2px 2px 5rem;
     right: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .companies h2 {
+        right: 0; } }
   .companies__logos {
     display: grid;
     margin: 12rem 8rem 4rem;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     align-items: center;
     justify-items: center;
     gap: 8rem; }
@@ -519,6 +530,10 @@ button {
   @media only screen and (max-width: 65em) {
     .passion-fruits {
       width: 95%; } }
+  @media only screen and (max-width: 56.25em) {
+    .passion-fruits {
+      padding: 5rem 0;
+      width: 100%; } }
   .passion-fruits h2 {
     border-radius: 2px 5rem 5rem 2px; }
   .passion-fruits__group {
@@ -573,7 +588,7 @@ button {
         text-align: center; } }
     .contact__text p {
       color: #cbdaf7;
-      margin: 1rem 0 2.5rem; }
+      margin: 1.5rem 0 2.5rem; }
     .contact__text .btn {
       margin-top: 3.5rem; }
   .contact__link:focus {
